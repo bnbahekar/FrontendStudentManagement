@@ -1,0 +1,130 @@
+# Filename: .gitignore
+
+# =========================
+# Node.js / React
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+frontend/build/
+frontend/dist/
+.next/
+.nuxt/
+
+# =========================
+# Java / Spring Boot
+# =========================
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven
+target/
+.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Spring Boot
+*.springBeans
+.springBeans
+.springToolSuite4/
+application-local.yml
+application-dev.yml
+
+# =========================
+# Environment variables
+# =========================
+.env
+.env.*
+backend/.env
+frontend/.env
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+hs_err_pid*
+replay_pid*
+
+# =========================
+# Docker
+# =========================
+*.pid
+*.seed
+*.pid.lock
+
+# Docker override files
+docker-compose.override.yml
+
+# =========================
+# Kubernetes
+# =========================
+*.kubeconfig
+kubeconfig.yaml
+
+# =========================
+# Terraform
+# =========================
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+terraform.tfvars
+terraform.tfvars.json
+.terraform.lock.hcl
+
+# =========================
+# Coverage / Testing
+# =========================
+coverage/
+htmlcov/
+.pytest_cache/
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.envrc
+
+# =========================
+# Temporary files
+# =========================
+tmp/
+temp/
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*.iml
+
+# =========================
+# Misc
+# =========================
+*.bak
+*.tmp
