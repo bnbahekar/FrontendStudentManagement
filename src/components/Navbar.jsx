@@ -8,9 +8,12 @@ export default function Navbar() {
   return (
     <>
       <div className="nav">
-        <h2>Subject Manager</h2>
-        <Link to="/">Home</Link>
-        <Link to="/add">Add</Link>
+
+        <h2>Student Manager</h2>
+           <Link to="/students">Students</Link>
+                   <Link to="/">Subjects</Link>
+
+<Link to="/health">Health</Link>
         <Link to="/history">History</Link>
       </div>
 

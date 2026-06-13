@@ -4,7 +4,6 @@ export default function SubjectForm({ initialData, onSubmit }) {
   const [form, setForm] = useState(
     initialData || { subjectName: "", subjectCode: "" }
   );
-
   const handleChange = (e) =>
     setForm({ ...form, [e.target.name]: e.target.value });
 

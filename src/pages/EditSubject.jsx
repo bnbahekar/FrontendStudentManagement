@@ -8,7 +8,7 @@ export default function EditSubject() {
   const { id } = useParams();
   const navigate = useNavigate();
 
-  //*  FIX: hook inside component
+  // ✅ FIX: hook inside component
   const { setMessage, addHistory } = useContext(AppContext);
 
   const [data, setData] = useState(null);
@@ -34,12 +34,12 @@ const oldCode = data.subjectCode;
     const res = await updateSubject(id, form);
 
 setMessage(
-    `Updated: ${oldName}*  ${form.subjectName} (${oldCode}*  ${form.subjectCode})`
+    `Updated: ${oldName} → ${form.subjectName} (${oldCode} → ${form.subjectCode})`
 );
 
     addHistory({
       type: "UPDATE",
-       message: `${oldName}*  ${form.subjectName} (${oldCode}*  ${form.subjectCode})`,
+       message: `${oldName} → ${form.subjectName} (${oldCode} → ${form.subjectCode})`,
       time: new Date().toLocaleString()
     });
 

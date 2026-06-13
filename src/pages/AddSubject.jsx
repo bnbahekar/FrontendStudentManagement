@@ -7,7 +7,7 @@ import { AppContext } from "../context/AppContext";
 export default function AddSubject() {
   const navigate = useNavigate();
 
-  //*  FIX: hook inside component
+  // ✅ FIX: hook inside component
   const { setMessage, addHistory } = useContext(AppContext);
 
   const handleSubmit = async (data) => {
